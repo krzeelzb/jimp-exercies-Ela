@@ -18,15 +18,9 @@ bool is_palindrome(string str){
     {
         if (str[i] != str[j]) {
             zmienna = false;
-
         }
-
     }
-
-
     return zmienna;
-
-
 
 }
 
@@ -76,15 +70,11 @@ uint64_t DoubleBasePalindromes(int max_vaule_exculsive) {
 
             dwa=to_binary(liczba);
 
-
             if (is_palindrome(dwa) == 1) {
-
 
                 result += liczba;
             }
         }
-
-
     }
     return result;
 }
