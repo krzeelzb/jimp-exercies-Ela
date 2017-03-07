@@ -20,7 +20,7 @@ bool is_palindrome(string str){
             zmienna = false;
 
         }
-        return zmienna;
+
     }
 
 
@@ -30,7 +30,7 @@ bool is_palindrome(string str){
 
 }
 
-string change(int liczba) {
+/*string change(int liczba) {
     string bin=" ";
     string liczbastring;
     while (liczba !=0) {
@@ -42,6 +42,21 @@ string change(int liczba) {
 
 
     return bin;
+}*/
+
+string to_binary(long int dec) {
+    string binary_s = "";
+    int reszta;
+    string reszta_s;
+    long int answer;
+    while (dec != 0) {
+        reszta = dec % 2;
+        dec = dec - reszta;
+        dec = dec / 2;
+        reszta_s = to_string(reszta);
+        binary_s = reszta_s + binary_s;
+    }
+    return binary_s;
 }
 
 
@@ -59,7 +74,7 @@ uint64_t DoubleBasePalindromes(int max_vaule_exculsive) {
 
         if (is_palindrome(liczbastring) == 1) {
 
-            dwa=change(liczba);
+            dwa=to_binary(liczba);
 
 
             if (is_palindrome(dwa) == 1) {
