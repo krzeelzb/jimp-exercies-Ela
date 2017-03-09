@@ -5,7 +5,7 @@
 #include <iostream>
 #include "Palindrome.h"
 
-int main{
+int main(){
         cout<<"Witaj!\nWybierz podane ocje:"<<endl;
 
 
