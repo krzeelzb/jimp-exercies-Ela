@@ -19,7 +19,7 @@ int **Array2D(int n_rows, int n_columns){
         tablica[i][n_columns] = i;
     }
 
-
+//kom
 
 }
 
